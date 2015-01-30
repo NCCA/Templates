@@ -92,10 +92,29 @@ Ok this is an experiment in generating the readme from my lecture notes to see i
 * No automatic type conversion is allowed. Each T must match exactly.
 [This program will fail to compile due to argument deduction](templates/argdeduct.cpp)
 
+#Overloading function templates
+* Like ordinary functions, function templates can also be overloaded.
+* The compiler must then decide which ones to use
+* The rules of these decisions and how the compiler does this can get very complicated and lead to issues.
+* The rules are similar to normal functions (for an in-depth discussion see Appendix B of “C++ templates the complete guide”
 
+#function template summary
+* Define a family of functions for different arguments
+* When arguments are passed templates are instantiated for those arguments
+* You can overload function templates
+* When overloading limit changes by explicitly specifying parameters ( <int,int> )
+* Make sure all overloaded versions are visible before being called
+
+#Class templates
+* Like functions classes may also be parameterised with one or more types.
+* This is how STL works for most containers.
+* This allows the type of the element being contained to be left open
+* The following example shows a simple stack template.
 
 #References
 * http://www.ibm.com/developerworks/library/l-metaprog1/
 * http://www.drdobbs.com/the-new-c-x-macros/184401387
+* C++ templates the complete Guide, David Vandevoorde, Nicolai M. Josuttis. Addison Wesley 2003
+* http://josuttis.com/tmplbook/index.html
 
 
