@@ -29,4 +29,12 @@ Ok this is an experiment in generating the readme from my lecture notes to see i
 
 ##sideeffects.c
 
-[code example](macros/sideeffects.c)
+[code example](macros/sideeffect1.c)
+
+##X Macros
+* x macros are a technique to generate compile time code structures
+* They consist of two parts, 
+** a list 
+** an execution of a list
+* Can be useful for generating types and lookup tables for error checking etc.
+* Also allows for easy expansion / maintenance of enums and code
