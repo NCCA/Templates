@@ -35,7 +35,6 @@ void Stack<T,CONTAINER>::pop()
 	m_elements.pop_back();
 }
 
-
 template <typename T,typename CONTAINER>
 T Stack<T,CONTAINER>::top() const
 {
