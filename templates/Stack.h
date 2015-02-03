@@ -5,7 +5,6 @@
 #include <stdexcept>
 
 template <typename T>
-
 class Stack
 {
 	private :

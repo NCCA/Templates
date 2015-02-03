@@ -110,6 +110,9 @@ Ok this is an experiment in generating the readme from my lecture notes to see i
 * This is how STL works for most containers.
 * This allows the type of the element being contained to be left open
 * The following example shows a simple stack template.
+[Stack.h](templates/Stack.h)
+[demo program](templates/stacktest1.cpp)
+
 
 #References
 * http://www.ibm.com/developerworks/library/l-metaprog1/
