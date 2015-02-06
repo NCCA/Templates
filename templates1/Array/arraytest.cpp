@@ -8,7 +8,9 @@ int main()
 	Array<int,10> intArray;
 
 	for(int i=0; i<intArray.size(); ++i)
+	{
 		intArray[i]=i;
+	}
 	// copy array
 	Array<int,10> array2=intArray;
 
