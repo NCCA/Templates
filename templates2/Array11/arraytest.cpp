@@ -2,12 +2,12 @@
 #include <cstdlib>
 #include <string>
 #include "Array.h"
-
+#include <array>
 int main()
 {
-	Array<int,10> intArray{1,2,3,4,5,6,7,8,9,10};
-
-	// copy array
+	Array<int,10> intArray{1,2,3,4,5,6,7,8,9,10,11};
+	//std::array<int,5>a={1,2,3,4,5,7};
+	// copy array2
 	Array<int,10> array2=intArray;
 
 	Array<int>::const_iterator begin=array2.begin();

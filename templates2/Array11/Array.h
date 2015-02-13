@@ -65,6 +65,8 @@ Array< T,SIZE>::Array()
 template <typename T, size_t SIZE>
 Array< T,SIZE>::Array(std::initializer_list<T> data) 
 {
+	// as initializer_list returns a non constexpr size we cant static assert 
+// 	static_assert(	data.size()!=SIZE ,"Initialiser must be same size");
 	std::copy(data.begin(),data.end(),&m_data[0]);
 }
 
