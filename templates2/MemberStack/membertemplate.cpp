@@ -18,7 +18,7 @@ int main()
 		fStack.pop();
 	}
 
-	Stack <std::string> sStack;
-	sStack=fStack;
+	// Stack <std::string> sStack;
+	// sStack=fStack;
 
 }

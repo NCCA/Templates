@@ -16,5 +16,7 @@ int main()
 	print({1,2,3,4,5});
 	print({1.0f,2.0f,0.2f,9.1f});
 	print({'a','b','c'});
+	auto a={1,2,3,4,5,6};
+	print(a);
 	return EXIT_SUCCESS;
 }

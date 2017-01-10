@@ -11,3 +11,4 @@ void printType(T const &_t)
 
 template void printType<double>(double const &);
 template void printType<float>(float const &);
+template void printType<int>(int const &);

@@ -21,10 +21,8 @@ public:
 	T top() const;         
 	bool empty() const { return m_elements.empty(); }
 
-	template<typename T2, 
-					 template<typename CELEM2, 
-										typename = std::allocator<CELEM2>
-									 >class CONTAINER2>
+	template<typename T2, template<typename CELEM2, 
+			 typename = std::allocator<CELEM2>>class CONTAINER2>
 	Stack<T,CONTAINER>& operator= (Stack<T2,CONTAINER2> const&);
 };
 
@@ -55,7 +53,7 @@ T Stack<T,CONTAINER>::top () const
 }
 
 template <typename T, template <typename,typename> class CONTAINER>
- template <typename T2, template <typename,typename> class CONTAINER2>
+template <typename T2, template <typename,typename> class CONTAINER2>
 Stack<T,CONTAINER>&
 Stack<T,CONTAINER>::operator= (Stack<T2,CONTAINER2> const& _rhs)
 {
