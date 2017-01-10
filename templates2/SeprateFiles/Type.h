@@ -1,5 +1,5 @@
-#ifndef TYPE_H__
-#define TYPE_H__
+#ifndef TYPE_H_
+#define TYPE_H_
 
 	template <typename T>
 	void printType(T const &); 

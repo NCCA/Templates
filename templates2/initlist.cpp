@@ -6,8 +6,8 @@ template <typename T>
 void print(std::initializer_list<T> data)
 {
 	for(auto s : data)
-		std::cout<<s<<" ";
-	std::cout<<std::endl;
+		std::cout<<s<<' ';
+	std::cout<<'\n';
 }
 
 int main()

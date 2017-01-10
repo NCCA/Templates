@@ -3,14 +3,14 @@
 template<typename T>
 T adder(T v) 
 {
-  std::cout << __PRETTY_FUNCTION__ << "\n";
+  std::cout << __PRETTY_FUNCTION__ << '\n';
   return v;
 }
 
 template<typename T, typename... Args>
 T adder(T first, Args... args) 
 {
-	std::cout << __PRETTY_FUNCTION__ << "\n";
+	std::cout << __PRETTY_FUNCTION__ << '\n';
   return first + adder(args...);
 }
 
