@@ -6,7 +6,7 @@
 int main()
 {
 	std::complex<float> c1,c2;
-	std::cout<< ::max(c1,c2)<<"\n";
+	std::cout<< ::max(c1,c2)<<'\n';
 
 	return EXIT_SUCCESS;
 }

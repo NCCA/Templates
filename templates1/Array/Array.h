@@ -1,5 +1,5 @@
-#ifndef ARRAY_H__
-#define ARRAY_H__
+#ifndef ARRAY_H_
+#define ARRAY_H_
 #include <stdexcept>
 
 template <typename T, size_t SIZE=0>

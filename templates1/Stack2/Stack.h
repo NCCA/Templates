@@ -1,5 +1,5 @@
-#ifndef STACK_H__
-#define STACK_H__
+#ifndef STACK_H_
+#define STACK_H_
 
 #include <vector>
 #include <string>

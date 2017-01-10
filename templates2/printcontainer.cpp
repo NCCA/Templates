@@ -11,7 +11,7 @@ void print(T const &_c)
 	{
 		std::cout<< *pos <<' ';
 	}
-	std::cout<<std::endl;
+	std::cout<<'\n';
 }
 
 int main()

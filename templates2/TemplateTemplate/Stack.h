@@ -1,6 +1,6 @@
 
-#ifndef STACK_H__
-#define STACK_H__
+#ifndef STACK_H_
+#define STACK_H_
 
 #include <deque>
 #include <stdexcept>
@@ -8,7 +8,7 @@
 
 template <typename T,
           template <typename CELEM, 
-                    typename = std::allocator<CELEM> >
+                    typename = std::allocator<CELEM>>
                     class CONTAINER = std::deque>
 class Stack 
 {

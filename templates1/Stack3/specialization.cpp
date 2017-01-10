@@ -12,17 +12,17 @@ int main()
 		Stack <std::string,std::deque<std::string> > stringStack;
 
 		intStack.push(7);
-		std::cout<< intStack.top() << std::endl;
+		std::cout<< intStack.top() << '\n';
 
 		stringStack.push("hello");
-		std::cout<< stringStack.top() << std::endl;
+		std::cout<< stringStack.top() << '\n';
 		stringStack.pop();
 		stringStack.pop();
 
 	}	
 	catch(std::exception const &ex)
 	{
-		std::cerr<<"Exception : "<< ex.what()<<"\n";
+		std::cerr<<"Exception : "<< ex.what()<<'\n';
 		exit (EXIT_FAILURE);
 	}
 

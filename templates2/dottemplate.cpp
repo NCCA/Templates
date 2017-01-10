@@ -8,7 +8,7 @@ void printBitset(std::bitset<N> const &b)
 {
 	std::cout << b.template to_string<char, std::char_traits<char>, 
 																		std::allocator <char> >()
-																		<<"\n";
+																		<<'\n';
 }
 
 int main()

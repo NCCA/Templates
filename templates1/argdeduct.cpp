@@ -5,8 +5,8 @@
 
 int main()
 {
-	std::cout<< ::max(4,7)<<"\n";
-	std::cout<< ::max(4,4.2)<<"\n";
+	std::cout<< ::max(4,7)<<'\n';
+	std::cout<< ::max(4,4.2)<<'\n';
 	
 	return EXIT_SUCCESS;
 }

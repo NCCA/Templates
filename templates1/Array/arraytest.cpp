@@ -21,11 +21,11 @@ int main()
 	{
 		std::cout<<*(begin++)<<" ";
 	}
-	std::cout<<"\n";
+	std::cout<<'\n';
 	try
 	{
 
-		std::cout<<"try to access element at -1 \n"<<intArray.at(-1)<<"\n";
+		std::cout<<"try to access element at -1 \n"<<intArray.at(-1)<<'\n';
 	}
 	catch(std::exception const &ex)
 	{
@@ -33,20 +33,20 @@ int main()
 	}
 	try
 	{
-		std::cout<<intArray.at(6)<<"\n";
+		std::cout<<intArray.at(6)<<'\n';
 	}
 	catch(std::exception const &ex)
 	{
-		std::cerr<<"Exception "<<ex.what()<<std::endl;
+		std::cerr<<"Exception "<<ex.what()<<'\n';
 	}
 	try
 	{
 
-		std::cout<<"try to access element at 99 \n"<<array2.at(99)<<"\n";
+		std::cout<<"try to access element at 99 \n"<<array2.at(99)<<'\n';
 	}
 	catch(std::exception const &ex)
 	{
-		std::cerr<<"Exception "<<ex.what()<<std::endl;
+		std::cerr<<"Exception "<<ex.what()<<'\n';
 	}
 
 }

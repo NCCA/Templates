@@ -16,7 +16,7 @@ int main()
 	fStack=intStack;
 	while(!fStack.empty())
 	{
-		std::cout<<fStack.top()<<"\n";
+		std::cout<<fStack.top()<<'\n';
 		fStack.pop();
 	}
 	std::cout<<"using Vector stack\n";
@@ -24,6 +24,6 @@ int main()
 	Stack<int,std::vector> vStack;
 	vStack.push(42);
 	vStack.push(7);
-	std::cout << vStack.top() << std::endl;
+	std::cout << vStack.top() << '\n';
 	vStack.pop();
 }

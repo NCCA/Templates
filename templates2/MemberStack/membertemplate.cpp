@@ -14,7 +14,7 @@ int main()
 	fStack=intStack;
 	while(!fStack.empty())
 	{
-		std::cout<<fStack.top()<<"\n";
+		std::cout<<fStack.top()<<'\n';
 		fStack.pop();
 	}
 
