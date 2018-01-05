@@ -11,10 +11,10 @@ int main()
 		Stack <std::string> stringStack;
 
 		intStack.push(7);
-		std::cout<< intStack.top() << std::endl;
+		std::cout<< intStack.top() << '\n';
 
 		stringStack.push("hello");
-		std::cout<< stringStack.top() << std::endl;
+		std::cout<< stringStack.top() << '\n';
 		stringStack.pop();
 		stringStack.pop();
 

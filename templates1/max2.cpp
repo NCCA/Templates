@@ -9,8 +9,11 @@
  * warranty, and with no claim as to its suitability for any purpose.
  */
 // maximum of two int values
+#include <iostream>
 inline int const& max (int const& a, int const& b) 
 {
+    	std::cout << __PRETTY_FUNCTION__ << '\n';
+
     return  a < b ? b : a;
 }
 
@@ -18,6 +21,7 @@ inline int const& max (int const& a, int const& b)
 template <typename T>
 inline T const& max (T const& a, T const& b)
 {
+	std::cout << __PRETTY_FUNCTION__ << '\n';
     return  a < b ? b : a;
 }
 
@@ -25,6 +29,7 @@ inline T const& max (T const& a, T const& b)
 template <typename T>
 inline T const& max (T const& a, T const& b, T const& c)
 {
+	std::cout << __PRETTY_FUNCTION__ << '\n';
     return ::max (::max(a,b), c);
 }
 

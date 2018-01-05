@@ -8,3 +8,6 @@ void printType(T const &_t)
 {
 	std::cout<<"Type is :"<< typeid(_t).name()<<'\n';
 }
+
+template void printType<float>(float const &);
+

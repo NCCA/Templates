@@ -5,9 +5,6 @@
 X(red, "red")       \
 X(green, "green")   \
 X(blue, "blue")  \
-X(blue1, "blue1")  \
-X(blue2, "blue2")  \
-X(blue3, "blue3")  \
 X(white,"white")
 
 #define X(a, b) a,
