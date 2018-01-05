@@ -1,45 +1,47 @@
 #ifndef COUNTER_H_
 #define COUNTER_H_
-
+#include <cstddef>
 template <typename T>
-struct counter
+class counter
 {
-  static int objects_created;
-  static int objects_alive;
-
+private :
+  static size_t m_created;
+  static size_t m_alive;
+protected :
   counter()
   {
-    ++objects_created;
-    ++objects_alive;
+    ++m_created;
+    ++m_alive;
   }
     
   counter(const counter&)
   {
-    ++objects_created;
-    ++objects_alive;
+    ++m_created;
+    ++m_alive;
   }
-protected:
     ~counter() // objects should never be removed through pointers of this type
     {
-      --objects_alive;
+      --m_alive;
     }
-};
-template <typename T> int counter<T>::objects_created( 0 );
-template <typename T> int counter<T>::objects_alive( 0 );
-
-class X : counter<X>
-{
-  public :
-    int getAlive(){return objects_alive;}  
-    int getCreated(){return objects_created;}  
+public :
+    static size_t alive()  {return m_alive;}
+    static size_t created()  {return m_created;}
 
 };
 
-class Y : counter<Y>
+template <typename T> size_t counter<T>::m_created(0);
+template <typename T> size_t counter<T>::m_alive(0);
+
+class X : public counter<X>
 {
   public :
-    int getAlive(){return objects_alive;}  
-    int getCreated(){return objects_created;}  
+    X()=default;
+};
+
+class Y : public counter<Y>
+{
+  public :
+    Y()=default;
    
 };
 
