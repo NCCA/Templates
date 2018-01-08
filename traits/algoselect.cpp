@@ -1,3 +1,5 @@
+// based on the example from here https://accu.org/index.php/journals/442
+
 #include <iostream>
 #include <cstdlib>
 
@@ -41,11 +43,13 @@ void algorithm( T& object )
   algorithm_selector< supports_optimised_implementation< T >::value >::implementation(object); 
 }
 
-class ObjectA { 
+class ObjectA 
+{ 
 public: 
 };
 
-class ObjectB { 
+class ObjectB 
+{ 
 public: 
   void optimised_implementation() 
   { 
